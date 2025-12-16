@@ -1,7 +1,7 @@
 Script inputs for Mainnet for `grove`.
 
 In order to run the script follow these steps:
-1. Copy the `temple-grove-deploy.json` file, name it meaningfully (i.e. `production-grove-deploy.json`) and replace placeholder config values with actual values.
+1. Copy the `template-grove-deploy.json` file, name it meaningfully (i.e. `production-grove-deploy.json`) and replace placeholder config values with actual values.
 2. Make sure that `script/output/1/grove` directory exists.
 3. Make sure that the following env variables are set (either set them manually or use `.env` file):
     - `FOUNDRY_ROOT_CHAINID=1`

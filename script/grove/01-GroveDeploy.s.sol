@@ -23,7 +23,6 @@ import {Reader} from "../helpers/Reader.sol";
 import {SDAODeploy, SDAODeployParams} from "../dependencies/SDAODeploy.sol";
 
 contract GroveDeployScript is Script {
-    ChainlogLike internal constant chainlog = ChainlogLike(0xdA0Ab1e0017DEbCd72Be8599041a2aa3bA7e740F);
     string internal constant NAME = "grove/grove-deploy";
 
     function run() external {
@@ -46,8 +45,4 @@ contract GroveDeployScript is Script {
         ScriptTools.exportValue(NAME, "name", "Grove");
         ScriptTools.exportValue(NAME, "symbol", "GROVE");
     }
-}
-
-interface ChainlogLike {
-    function getAddress(bytes32 _key) external view returns (address addr);
 }
