@@ -15,8 +15,6 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 pragma solidity ^0.8.16;
 
-import "forge-std/console.sol";
-
 import {Script} from "forge-std/Script.sol";
 import {ScriptTools} from "dss-test/ScriptTools.sol";
 import {Reader} from "../helpers/Reader.sol";
@@ -29,8 +27,6 @@ contract GroveDeployScript is Script {
         Reader reader = new Reader(ScriptTools.loadConfig());
 
         address admin = reader.envOrReadAddress("FOUNDRY_ADMIN", ".admin");
-
-        console.log(msg.sender);
 
         vm.startBroadcast();
 
