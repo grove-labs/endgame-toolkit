@@ -16,6 +16,6 @@ forge script --rpc-url $YOUR_MAINNET_RPC_URL script/grove/01-GroveDeploy.s.sol:G
 ```
 7. To execute the on-chain deployment, run the following command:
 ```sh
-forge script --rpc-url $YOUR_MAINNET_RPC_URL --broadcast -- verify script/grove/01-GroveDeploy.s.sol:GroveDeployScript
+forge script --rpc-url $YOUR_MAINNET_RPC_URL --broadcast --verify script/grove/01-GroveDeploy.s.sol:GroveDeployScript
 # add any other options that might be needed, especially the ones needed for a proper key unlock
 ```
